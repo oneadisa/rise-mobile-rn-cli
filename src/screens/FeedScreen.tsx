@@ -9,11 +9,9 @@ export default function FeedScreen() {
   return (
     <View style={styles.container}>
       <Text>Feed Screen</Text>
-      <Button onPress={() => navigation.navigate('Messages')}>
-        Go to Message
+      <Button onPress={() => navigation.navigate('Profile')}>
+        Go to Profile
       </Button>
-
-      {/* <Button onPress={() => navigation.goBack()}>Go back</Button> */}
     </View>
   );
 }

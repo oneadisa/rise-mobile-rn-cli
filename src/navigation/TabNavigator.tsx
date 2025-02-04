@@ -1,19 +1,16 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import HomeStack from './StackNavigation';
-import ProfileScreen from '../screens/ProfileScreen';
+
+import FeedScreen from '../screens/FeedScreen';
+import MessagesScreen from '../screens/MessageScreen';
 
 const Tab = createBottomTabNavigator();
 
-export function RootTabs() {
+export function HomeTabs() {
   return (
-    <Tab.Navigator id="HomeTabs">
-      <Tab.Screen
-        name="Home"
-        component={HomeStack}
-        options={{headerShown: false}}
-      />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+    <Tab.Navigator>
+      <Tab.Screen name="Feed" component={FeedScreen} />
+      <Tab.Screen name="Messages" component={MessagesScreen} />
     </Tab.Navigator>
   );
 }
