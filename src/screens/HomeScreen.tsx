@@ -1,9 +1,11 @@
+/* eslint-disable react-native/no-inline-styles */
 import * as React from 'react';
-import {View, Text, StyleSheet, TextInput} from 'react-native';
+import {View, Text, TextInput} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {Button} from '@react-navigation/elements';
+
 export default function HomeScreen({route}: any) {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
 
   // Use an effect to monitor the update to params
   React.useEffect(() => {
@@ -34,8 +36,8 @@ export default function HomeScreen({route}: any) {
   );
 }
 
-export function CreatePostScreen({route}) {
-  const navigation = useNavigation();
+export function CreatePostScreen() {
+  const navigation = useNavigation<any>();
   const [postText, setPostText] = React.useState('');
 
   return (
@@ -57,14 +59,7 @@ export function CreatePostScreen({route}) {
     </>
   );
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-function alert(arg0: string) {
-  throw new Error('Function not implemented.');
+function alert(message: string) {
+  // Display an alert with the given message
+  console.log(message);
 }

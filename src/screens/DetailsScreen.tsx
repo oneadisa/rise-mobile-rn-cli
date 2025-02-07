@@ -3,8 +3,8 @@ import {View, Text, StyleSheet} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {Button} from '@react-navigation/elements';
 
-export default function DetailsScreen({route}) {
-  const navigation = useNavigation();
+export default function DetailsScreen({route}: any) {
+  const navigation = useNavigation<any>();
   const {itemId, otherParam} = route.params;
   return (
     <View style={styles.container}>

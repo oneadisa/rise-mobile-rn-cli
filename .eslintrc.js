@@ -4,5 +4,6 @@ module.exports = {
   rules: {
     'eol-last': 'off',
     'no-alert': 'off',
+    'react/no-unstable-nested-components': 'off',
   },
 };

@@ -1,12 +1,12 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 
-import {RootTabs} from './src/navigation/TabNavigator';
+import {HomeStack} from './src/navigation/StackNavigation';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <RootTabs />
+      <HomeStack />
     </NavigationContainer>
   );
 }

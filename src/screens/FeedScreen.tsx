@@ -4,13 +4,13 @@ import {useNavigation} from '@react-navigation/native';
 import {Button} from '@react-navigation/elements';
 
 export default function FeedScreen() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
 
   return (
     <View style={styles.container}>
-      <Text>Feed Screen</Text>
-      <Button onPress={() => navigation.navigate('Profile')}>
-        Go to Profile
+      <Text>Shipments</Text>
+      <Button onPress={() => navigation.navigate('Messages')}>
+        Go to Messages
       </Button>
     </View>
   );
