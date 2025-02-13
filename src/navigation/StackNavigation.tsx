@@ -14,7 +14,14 @@ export function HomeStack() {
         component={HomeTabs}
         options={{headerShown: false}}
       />
-      <Stack.Screen name="Messages" component={MessageScreen} />
+      <Stack.Screen
+        name="Messages"
+        component={MessageScreen}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 }
+
+// import DrawerNavigation from './DrawerNavigation';
+// <Stack.Screen name="Drawer" component={DrawerNavigation} />

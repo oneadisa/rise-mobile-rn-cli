@@ -12,6 +12,9 @@ export default function FeedScreen() {
       <Button onPress={() => navigation.navigate('Messages')}>
         Go to Messages
       </Button>
+      {/* <Button onPress={() => navigation.navigate('Drawer')}>
+        Go to Drawer
+      </Button> */}
     </View>
   );
 }

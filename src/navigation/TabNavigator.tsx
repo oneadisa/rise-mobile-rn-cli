@@ -28,6 +28,7 @@ export function HomeTabs() {
     <Tab.Navigator
       initialRouteName="Shipments"
       screenOptions={{
+        headerShown: false,
         tabBarActiveTintColor: '#2F50C1',
         tabBarInactiveTintColor: '#ccc',
         tabBarStyle: {
